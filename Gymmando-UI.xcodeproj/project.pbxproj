@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B75DC2A02ED574A1007035D6 /* Gymmando_UIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DC29F2ED574A1007035D6 /* Gymmando_UIApp.swift */; };
+		B75DC2A22ED574A1007035D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DC2A12ED574A1007035D6 /* ContentView.swift */; };
+		B75DC2A42ED574A3007035D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B75DC2A32ED574A3007035D6 /* Assets.xcassets */; };
+		B75DC2A72ED574A3007035D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B75DC2A62ED574A3007035D6 /* Preview Assets.xcassets */; };
+		B75DC2B12ED574A3007035D6 /* Gymmando_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DC2B02ED574A3007035D6 /* Gymmando_UITests.swift */; };
+		B75DC2BB2ED574A3007035D6 /* Gymmando_UIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DC2BA2ED574A3007035D6 /* Gymmando_UIUITests.swift */; };
+		B75DC2BD2ED574A3007035D6 /* Gymmando_UIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DC2BC2ED574A3007035D6 /* Gymmando_UIUITestsLaunchTests.swift */; };
+		B75DC2CB2ED5796E007035D6 /* LiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = B75DC2CA2ED5796E007035D6 /* LiveKit */; };
+		B75DC2D42ED57ACF007035D6 /* LiveKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DC2D32ED57ACF007035D6 /* LiveKitService.swift */; };
+		B75DC2D62ED57B71007035D6 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DC2D52ED57B71007035D6 /* AppViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B75DC2AD2ED574A3007035D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B75DC2942ED574A1007035D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B75DC29B2ED574A1007035D6;
+			remoteInfo = "Gymmando-UI";
+		};
+		B75DC2B72ED574A3007035D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B75DC2942ED574A1007035D6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B75DC29B2ED574A1007035D6;
+			remoteInfo = "Gymmando-UI";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B75DC29C2ED574A1007035D6 /* Gymmando-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gymmando-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75DC29F2ED574A1007035D6 /* Gymmando_UIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymmando_UIApp.swift; sourceTree = "<group>"; };
+		B75DC2A12ED574A1007035D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B75DC2A32ED574A3007035D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B75DC2A62ED574A3007035D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B75DC2AC2ED574A3007035D6 /* Gymmando-UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gymmando-UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75DC2B02ED574A3007035D6 /* Gymmando_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymmando_UITests.swift; sourceTree = "<group>"; };
+		B75DC2B62ED574A3007035D6 /* Gymmando-UIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gymmando-UIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B75DC2BA2ED574A3007035D6 /* Gymmando_UIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymmando_UIUITests.swift; sourceTree = "<group>"; };
+		B75DC2BC2ED574A3007035D6 /* Gymmando_UIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymmando_UIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B75DC2D32ED57ACF007035D6 /* LiveKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveKitService.swift; sourceTree = "<group>"; };
+		B75DC2D52ED57B71007035D6 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B75DC2992ED574A1007035D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75DC2CB2ED5796E007035D6 /* LiveKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B75DC2A92ED574A3007035D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B75DC2B32ED574A3007035D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B75DC2932ED574A1007035D6 = {
+			isa = PBXGroup;
+			children = (
+				B75DC29E2ED574A1007035D6 /* Gymmando-UI */,
+				B75DC2AF2ED574A3007035D6 /* Gymmando-UITests */,
+				B75DC2B92ED574A3007035D6 /* Gymmando-UIUITests */,
+				B75DC29D2ED574A1007035D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B75DC29D2ED574A1007035D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B75DC29C2ED574A1007035D6 /* Gymmando-UI.app */,
+				B75DC2AC2ED574A3007035D6 /* Gymmando-UITests.xctest */,
+				B75DC2B62ED574A3007035D6 /* Gymmando-UIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B75DC29E2ED574A1007035D6 /* Gymmando-UI */ = {
+			isa = PBXGroup;
+			children = (
+				B75DC2D22ED57A70007035D6 /* Utilities */,
+				B75DC2D12ED57A62007035D6 /* Models */,
+				B75DC2D02ED57A59007035D6 /* Services */,
+				B75DC2CF2ED57A24007035D6 /* ViewModels */,
+				B75DC2CE2ED57A11007035D6 /* Views */,
+				B75DC2CD2ED579E3007035D6 /* App */,
+				B75DC2A32ED574A3007035D6 /* Assets.xcassets */,
+				B75DC2A52ED574A3007035D6 /* Preview Content */,
+			);
+			path = "Gymmando-UI";
+			sourceTree = "<group>";
+		};
+		B75DC2A52ED574A3007035D6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				B75DC2A62ED574A3007035D6 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B75DC2AF2ED574A3007035D6 /* Gymmando-UITests */ = {
+			isa = PBXGroup;
+			children = (
+				B75DC2B02ED574A3007035D6 /* Gymmando_UITests.swift */,
+			);
+			path = "Gymmando-UITests";
+			sourceTree = "<group>";
+		};
+		B75DC2B92ED574A3007035D6 /* Gymmando-UIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B75DC2BA2ED574A3007035D6 /* Gymmando_UIUITests.swift */,
+				B75DC2BC2ED574A3007035D6 /* Gymmando_UIUITestsLaunchTests.swift */,
+			);
+			path = "Gymmando-UIUITests";
+			sourceTree = "<group>";
+		};
+		B75DC2CD2ED579E3007035D6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B75DC29F2ED574A1007035D6 /* Gymmando_UIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B75DC2CE2ED57A11007035D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B75DC2A12ED574A1007035D6 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B75DC2CF2ED57A24007035D6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B75DC2D52ED57B71007035D6 /* AppViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B75DC2D02ED57A59007035D6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B75DC2D32ED57ACF007035D6 /* LiveKitService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B75DC2D12ED57A62007035D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B75DC2D22ED57A70007035D6 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B75DC29B2ED574A1007035D6 /* Gymmando-UI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B75DC2C02ED574A3007035D6 /* Build configuration list for PBXNativeTarget "Gymmando-UI" */;
+			buildPhases = (
+				B75DC2982ED574A1007035D6 /* Sources */,
+				B75DC2992ED574A1007035D6 /* Frameworks */,
+				B75DC29A2ED574A1007035D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gymmando-UI";
+			packageProductDependencies = (
+				B75DC2CA2ED5796E007035D6 /* LiveKit */,
+			);
+			productName = "Gymmando-UI";
+			productReference = B75DC29C2ED574A1007035D6 /* Gymmando-UI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B75DC2AB2ED574A3007035D6 /* Gymmando-UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B75DC2C32ED574A3007035D6 /* Build configuration list for PBXNativeTarget "Gymmando-UITests" */;
+			buildPhases = (
+				B75DC2A82ED574A3007035D6 /* Sources */,
+				B75DC2A92ED574A3007035D6 /* Frameworks */,
+				B75DC2AA2ED574A3007035D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B75DC2AE2ED574A3007035D6 /* PBXTargetDependency */,
+			);
+			name = "Gymmando-UITests";
+			productName = "Gymmando-UITests";
+			productReference = B75DC2AC2ED574A3007035D6 /* Gymmando-UITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B75DC2B52ED574A3007035D6 /* Gymmando-UIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B75DC2C62ED574A3007035D6 /* Build configuration list for PBXNativeTarget "Gymmando-UIUITests" */;
+			buildPhases = (
+				B75DC2B22ED574A3007035D6 /* Sources */,
+				B75DC2B32ED574A3007035D6 /* Frameworks */,
+				B75DC2B42ED574A3007035D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B75DC2B82ED574A3007035D6 /* PBXTargetDependency */,
+			);
+			name = "Gymmando-UIUITests";
+			productName = "Gymmando-UIUITests";
+			productReference = B75DC2B62ED574A3007035D6 /* Gymmando-UIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B75DC2942ED574A1007035D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					B75DC29B2ED574A1007035D6 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					B75DC2AB2ED574A3007035D6 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B75DC29B2ED574A1007035D6;
+					};
+					B75DC2B52ED574A3007035D6 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = B75DC29B2ED574A1007035D6;
+					};
+				};
+			};
+			buildConfigurationList = B75DC2972ED574A1007035D6 /* Build configuration list for PBXProject "Gymmando-UI" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B75DC2932ED574A1007035D6;
+			packageReferences = (
+				B75DC2C92ED5796E007035D6 /* XCRemoteSwiftPackageReference "client-sdk-ios" */,
+			);
+			productRefGroup = B75DC29D2ED574A1007035D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B75DC29B2ED574A1007035D6 /* Gymmando-UI */,
+				B75DC2AB2ED574A3007035D6 /* Gymmando-UITests */,
+				B75DC2B52ED574A3007035D6 /* Gymmando-UIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B75DC29A2ED574A1007035D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75DC2A72ED574A3007035D6 /* Preview Assets.xcassets in Resources */,
+				B75DC2A42ED574A3007035D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B75DC2AA2ED574A3007035D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B75DC2B42ED574A3007035D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B75DC2982ED574A1007035D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75DC2D42ED57ACF007035D6 /* LiveKitService.swift in Sources */,
+				B75DC2A22ED574A1007035D6 /* ContentView.swift in Sources */,
+				B75DC2D62ED57B71007035D6 /* AppViewModel.swift in Sources */,
+				B75DC2A02ED574A1007035D6 /* Gymmando_UIApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B75DC2A82ED574A3007035D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75DC2B12ED574A3007035D6 /* Gymmando_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B75DC2B22ED574A3007035D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B75DC2BD2ED574A3007035D6 /* Gymmando_UIUITestsLaunchTests.swift in Sources */,
+				B75DC2BB2ED574A3007035D6 /* Gymmando_UIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B75DC2AE2ED574A3007035D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B75DC29B2ED574A1007035D6 /* Gymmando-UI */;
+			targetProxy = B75DC2AD2ED574A3007035D6 /* PBXContainerItemProxy */;
+		};
+		B75DC2B82ED574A3007035D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B75DC29B2ED574A1007035D6 /* Gymmando-UI */;
+			targetProxy = B75DC2B72ED574A3007035D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B75DC2BE2ED574A3007035D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B75DC2BF2ED574A3007035D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B75DC2C12ED574A3007035D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gymmando-UI/Preview Content\"";
+				DEVELOPMENT_TEAM = R8JLG26X88;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "example.Gymmando-UI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B75DC2C22ED574A3007035D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Gymmando-UI/Preview Content\"";
+				DEVELOPMENT_TEAM = R8JLG26X88;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "example.Gymmando-UI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B75DC2C42ED574A3007035D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "example.Gymmando-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gymmando-UI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gymmando-UI";
+			};
+			name = Debug;
+		};
+		B75DC2C52ED574A3007035D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "example.Gymmando-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gymmando-UI.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Gymmando-UI";
+			};
+			name = Release;
+		};
+		B75DC2C72ED574A3007035D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "example.Gymmando-UIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Gymmando-UI";
+			};
+			name = Debug;
+		};
+		B75DC2C82ED574A3007035D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "example.Gymmando-UIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Gymmando-UI";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B75DC2972ED574A1007035D6 /* Build configuration list for PBXProject "Gymmando-UI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B75DC2BE2ED574A3007035D6 /* Debug */,
+				B75DC2BF2ED574A3007035D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B75DC2C02ED574A3007035D6 /* Build configuration list for PBXNativeTarget "Gymmando-UI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B75DC2C12ED574A3007035D6 /* Debug */,
+				B75DC2C22ED574A3007035D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B75DC2C32ED574A3007035D6 /* Build configuration list for PBXNativeTarget "Gymmando-UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B75DC2C42ED574A3007035D6 /* Debug */,
+				B75DC2C52ED574A3007035D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B75DC2C62ED574A3007035D6 /* Build configuration list for PBXNativeTarget "Gymmando-UIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B75DC2C72ED574A3007035D6 /* Debug */,
+				B75DC2C82ED574A3007035D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B75DC2C92ED5796E007035D6 /* XCRemoteSwiftPackageReference "client-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/livekit/client-sdk-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B75DC2CA2ED5796E007035D6 /* LiveKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B75DC2C92ED5796E007035D6 /* XCRemoteSwiftPackageReference "client-sdk-ios" */;
+			productName = LiveKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = B75DC2942ED574A1007035D6 /* Project object */;
+}
