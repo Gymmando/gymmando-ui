@@ -5,26 +5,34 @@ class AppViewModel: ObservableObject {
     @Published var liveKit = LiveKitService()
     
     func connect() async {
-        let url = "wss://gymbo-li7l0in9.livekit.cloud"
+        print("🔴🔴🔴 CONNECT CALLED 🔴🔴🔴")
         
         do {
-            // 1️⃣ Fetch the access token from your server
-            guard let tokenURL = URL(string: "https://your-server.com/getToken") else { return }
-            let (data, _) = try await URLSession.shared.data(from: tokenURL)
+            // Use fixed room for now
+            let roomName = "gym-room"
             
-            // 2️⃣ Decode JSON
-            let json = try JSONSerialization.jsonObject(with: data) as? [String: Any]
-            guard let token = json?["token"] as? String else {
-                print("Token not found in response")
+            guard let tokenURL = URL(string: "https://gymmando-api-cjpxcek7oa-uc.a.run.app/token") else {
+                print("❌ Invalid URL")
                 return
             }
             
-            // 3️⃣ Connect to LiveKit with fetched token
-            // ❌ Do NOT use await here because LiveKitService.connect() handles async internally
-            liveKit.connect(url: url, token: token)
+            print("🟦 Fetching token...")
+            let (data, _) = try await URLSession.shared.data(from: tokenURL)
+            
+            let json = try JSONSerialization.jsonObject(with: data) as? [String: Any]
+            
+            guard let token = json?["token"] as? String else {
+                print("❌ No token")
+                return
+            }
+            
+            print("✅ Token received")
+            
+            let url = "wss://gymbo-li7l0in9.livekit.cloud"
+            await liveKit.connect(url: url, token: token)
             
         } catch {
-            print("Error fetching token or connecting:", error)
+            print("❌ Error:", error)
         }
     }
 }

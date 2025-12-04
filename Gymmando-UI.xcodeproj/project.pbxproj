@@ -49,6 +49,7 @@
 		B75DC2BC2ED574A3007035D6 /* Gymmando_UIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymmando_UIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B75DC2D32ED57ACF007035D6 /* LiveKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveKitService.swift; sourceTree = "<group>"; };
 		B75DC2D52ED57B71007035D6 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		B7D1F3B22EDE973C00794303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +101,7 @@
 		B75DC29E2ED574A1007035D6 /* Gymmando-UI */ = {
 			isa = PBXGroup;
 			children = (
+				B7D1F3B22EDE973C00794303 /* Info.plist */,
 				B75DC2D22ED57A70007035D6 /* Utilities */,
 				B75DC2D12ED57A62007035D6 /* Models */,
 				B75DC2D02ED57A59007035D6 /* Services */,
@@ -485,6 +487,9 @@
 				DEVELOPMENT_TEAM = R8JLG26X88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gymmando-UI/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Gymmando;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need microphone for voice chat with AI assistant";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -515,6 +520,9 @@
 				DEVELOPMENT_TEAM = R8JLG26X88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gymmando-UI/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = Gymmando;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Need microphone for voice chat with AI assistant";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
