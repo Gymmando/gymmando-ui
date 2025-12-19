@@ -2,7 +2,20 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Gymmando uses Face ID to securely log you in</string>
 	<key>NSMicrophoneInjectionUsageDescription</key>
 	<string>Gymmando needs microphone access</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.701724976354-uko2cl87v7f2if14dm7qb5q4j5b81dqt</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>

@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B728F5A62EF5026D008DA12D /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = B728F5A52EF5026D008DA12D /* GoogleSignIn */; };
+		B728F5A82EF5026D008DA12D /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B728F5A72EF5026D008DA12D /* GoogleSignInSwift */; };
+		B728F5AB2EF502A7008DA12D /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B728F5AA2EF502A7008DA12D /* FirebaseAuth */; };
+		B728F5AD2EF502A7008DA12D /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = B728F5AC2EF502A7008DA12D /* FirebaseCore */; };
+		B728F5AF2EF50303008DA12D /* GoogleService-Info (4).plist in Resources */ = {isa = PBXBuildFile; fileRef = B728F5AE2EF50303008DA12D /* GoogleService-Info (4).plist */; };
+		B728F5B12EF50400008DA12D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B728F5B02EF50400008DA12D /* LoginView.swift */; };
+		B728F5B32EF50400008DA12D /* BiometricAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = B728F5B22EF50400008DA12D /* BiometricAuth.swift */; };
+		B728F5B52EF50400008DA12D /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B728F5B42EF50400008DA12D /* AuthManager.swift */; };
+		B728F5B72EF50400008DA12D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B728F5B62EF50400008DA12D /* GoogleService-Info.plist */; };
 		B75DC2A02ED574A1007035D6 /* Gymmando_UIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DC29F2ED574A1007035D6 /* Gymmando_UIApp.swift */; };
 		B75DC2A22ED574A1007035D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DC2A12ED574A1007035D6 /* ContentView.swift */; };
 		B75DC2A42ED574A3007035D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B75DC2A32ED574A3007035D6 /* Assets.xcassets */; };
 		B75DC2A72ED574A3007035D6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B75DC2A62ED574A3007035D6 /* Preview Assets.xcassets */; };
-		B75DC2B12ED574A3007035D6 /* Gymmando_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DC2B02ED574A3007035D6 /* Gymmando_UITests.swift */; };
-		B75DC2BB2ED574A3007035D6 /* Gymmando_UIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DC2BA2ED574A3007035D6 /* Gymmando_UIUITests.swift */; };
-		B75DC2BD2ED574A3007035D6 /* Gymmando_UIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DC2BC2ED574A3007035D6 /* Gymmando_UIUITestsLaunchTests.swift */; };
 		B75DC2CB2ED5796E007035D6 /* LiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = B75DC2CA2ED5796E007035D6 /* LiveKit */; };
 		B75DC2D42ED57ACF007035D6 /* LiveKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DC2D32ED57ACF007035D6 /* LiveKitService.swift */; };
 		B75DC2D62ED57B71007035D6 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DC2D52ED57B71007035D6 /* AppViewModel.swift */; };
@@ -37,16 +43,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B728F5AE2EF50303008DA12D /* GoogleService-Info (4).plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (4).plist"; sourceTree = "<group>"; };
+		B728F5B02EF50400008DA12D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B728F5B22EF50400008DA12D /* BiometricAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuth.swift; sourceTree = "<group>"; };
+		B728F5B42EF50400008DA12D /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		B728F5B62EF50400008DA12D /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B75DC29C2ED574A1007035D6 /* Gymmando-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gymmando-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75DC29F2ED574A1007035D6 /* Gymmando_UIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymmando_UIApp.swift; sourceTree = "<group>"; };
 		B75DC2A12ED574A1007035D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B75DC2A32ED574A3007035D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B75DC2A62ED574A3007035D6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B75DC2AC2ED574A3007035D6 /* Gymmando-UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gymmando-UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B75DC2B02ED574A3007035D6 /* Gymmando_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymmando_UITests.swift; sourceTree = "<group>"; };
 		B75DC2B62ED574A3007035D6 /* Gymmando-UIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gymmando-UIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B75DC2BA2ED574A3007035D6 /* Gymmando_UIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymmando_UIUITests.swift; sourceTree = "<group>"; };
-		B75DC2BC2ED574A3007035D6 /* Gymmando_UIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gymmando_UIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B75DC2D32ED57ACF007035D6 /* LiveKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveKitService.swift; sourceTree = "<group>"; };
 		B75DC2D52ED57B71007035D6 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		B7D1F3B22EDE973C00794303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -57,7 +65,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B728F5A82EF5026D008DA12D /* GoogleSignInSwift in Frameworks */,
+				B728F5AD2EF502A7008DA12D /* FirebaseCore in Frameworks */,
 				B75DC2CB2ED5796E007035D6 /* LiveKit in Frameworks */,
+				B728F5A62EF5026D008DA12D /* GoogleSignIn in Frameworks */,
+				B728F5AB2EF502A7008DA12D /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,8 +94,6 @@
 			isa = PBXGroup;
 			children = (
 				B75DC29E2ED574A1007035D6 /* Gymmando-UI */,
-				B75DC2AF2ED574A3007035D6 /* Gymmando-UITests */,
-				B75DC2B92ED574A3007035D6 /* Gymmando-UIUITests */,
 				B75DC29D2ED574A1007035D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,6 +120,8 @@
 				B75DC2CD2ED579E3007035D6 /* App */,
 				B75DC2A32ED574A3007035D6 /* Assets.xcassets */,
 				B75DC2A52ED574A3007035D6 /* Preview Content */,
+				B728F5AE2EF50303008DA12D /* GoogleService-Info (4).plist */,
+				B728F5B62EF50400008DA12D /* GoogleService-Info.plist */,
 			);
 			path = "Gymmando-UI";
 			sourceTree = "<group>";
@@ -120,23 +132,6 @@
 				B75DC2A62ED574A3007035D6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		B75DC2AF2ED574A3007035D6 /* Gymmando-UITests */ = {
-			isa = PBXGroup;
-			children = (
-				B75DC2B02ED574A3007035D6 /* Gymmando_UITests.swift */,
-			);
-			path = "Gymmando-UITests";
-			sourceTree = "<group>";
-		};
-		B75DC2B92ED574A3007035D6 /* Gymmando-UIUITests */ = {
-			isa = PBXGroup;
-			children = (
-				B75DC2BA2ED574A3007035D6 /* Gymmando_UIUITests.swift */,
-				B75DC2BC2ED574A3007035D6 /* Gymmando_UIUITestsLaunchTests.swift */,
-			);
-			path = "Gymmando-UIUITests";
 			sourceTree = "<group>";
 		};
 		B75DC2CD2ED579E3007035D6 /* App */ = {
@@ -151,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				B75DC2A12ED574A1007035D6 /* ContentView.swift */,
+				B728F5B02EF50400008DA12D /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -167,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				B75DC2D32ED57ACF007035D6 /* LiveKitService.swift */,
+				B728F5B22EF50400008DA12D /* BiometricAuth.swift */,
+				B728F5B42EF50400008DA12D /* AuthManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -203,6 +201,10 @@
 			name = "Gymmando-UI";
 			packageProductDependencies = (
 				B75DC2CA2ED5796E007035D6 /* LiveKit */,
+				B728F5A52EF5026D008DA12D /* GoogleSignIn */,
+				B728F5A72EF5026D008DA12D /* GoogleSignInSwift */,
+				B728F5AA2EF502A7008DA12D /* FirebaseAuth */,
+				B728F5AC2EF502A7008DA12D /* FirebaseCore */,
 			);
 			productName = "Gymmando-UI";
 			productReference = B75DC29C2ED574A1007035D6 /* Gymmando-UI.app */;
@@ -278,6 +280,8 @@
 			mainGroup = B75DC2932ED574A1007035D6;
 			packageReferences = (
 				B75DC2C92ED5796E007035D6 /* XCRemoteSwiftPackageReference "client-sdk-ios" */,
+				B728F5A42EF5026D008DA12D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				B728F5A92EF502A7008DA12D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = B75DC29D2ED574A1007035D6 /* Products */;
 			projectDirPath = "";
@@ -296,7 +300,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B75DC2A72ED574A3007035D6 /* Preview Assets.xcassets in Resources */,
+				B728F5AF2EF50303008DA12D /* GoogleService-Info (4).plist in Resources */,
 				B75DC2A42ED574A3007035D6 /* Assets.xcassets in Resources */,
+				B728F5B72EF50400008DA12D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +331,9 @@
 				B75DC2A22ED574A1007035D6 /* ContentView.swift in Sources */,
 				B75DC2D62ED57B71007035D6 /* AppViewModel.swift in Sources */,
 				B75DC2A02ED574A1007035D6 /* Gymmando_UIApp.swift in Sources */,
+				B728F5B12EF50400008DA12D /* LoginView.swift in Sources */,
+				B728F5B32EF50400008DA12D /* BiometricAuth.swift in Sources */,
+				B728F5B52EF50400008DA12D /* AuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +341,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B75DC2B12ED574A3007035D6 /* Gymmando_UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,8 +348,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B75DC2BD2ED574A3007035D6 /* Gymmando_UIUITestsLaunchTests.swift in Sources */,
-				B75DC2BB2ED574A3007035D6 /* Gymmando_UIUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,7 +506,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "example.Gymmando-UI";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gymmando;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -533,7 +539,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "example.Gymmando-UI";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gymmando;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -544,7 +550,6 @@
 		B75DC2C42ED574A3007035D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -563,7 +568,6 @@
 		B75DC2C52ED574A3007035D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -582,7 +586,6 @@
 		B75DC2C72ED574A3007035D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -599,7 +602,6 @@
 		B75DC2C82ED574A3007035D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -655,6 +657,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B728F5A42EF5026D008DA12D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		B728F5A92EF502A7008DA12D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.7.0;
+			};
+		};
 		B75DC2C92ED5796E007035D6 /* XCRemoteSwiftPackageReference "client-sdk-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/livekit/client-sdk-ios";
@@ -666,6 +684,26 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B728F5A52EF5026D008DA12D /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B728F5A42EF5026D008DA12D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		B728F5A72EF5026D008DA12D /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B728F5A42EF5026D008DA12D /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		B728F5AA2EF502A7008DA12D /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B728F5A92EF502A7008DA12D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B728F5AC2EF502A7008DA12D /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B728F5A92EF502A7008DA12D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
 		B75DC2CA2ED5796E007035D6 /* LiveKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B75DC2C92ED5796E007035D6 /* XCRemoteSwiftPackageReference "client-sdk-ios" */;
