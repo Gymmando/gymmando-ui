@@ -1,76 +1,111 @@
 import SwiftUI
+import FirebaseAuth
 
 struct ContentView: View {
-    @StateObject private var viewModel = AppViewModel()
-    @State private var errorMessage: String = ""
-    @State private var isConnecting = false  // ADD THIS LINE
+    @State private var userName: String = ""
+    @State private var showAISession = false
     
     var body: some View {
-        VStack(spacing: 20) {
-            Image(systemName: "mic.fill")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-                .font(.system(size: 60))
+        ZStack {
+            // Dark background
+            Color.black.ignoresSafeArea()
             
-            Text("Gymmando")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-            
-            Text("Your Gym Bro Assistant")
-                .font(.subheadline)
-                .foregroundColor(.secondary)
-            
-            if viewModel.liveKit.connected {
-                Text("🟢 Connected")
-                    .foregroundColor(.green)
-                    .fontWeight(.semibold)
-            } else {
-                Text("⚪️ Disconnected")
-                    .foregroundColor(.gray)
-            }
-            
-            if !errorMessage.isEmpty {
-                Text("Error: \(errorMessage)")
-                    .foregroundColor(.red)
-                    .font(.caption)
-            }
-            
-            Button(action: {
-                errorMessage = ""
-                Task {
-                    if viewModel.liveKit.connected {
-                        isConnecting = true
-                        await viewModel.liveKit.disconnect()
-                        try? await Task.sleep(nanoseconds: 2_000_000_000)
-                        isConnecting = false
+            VStack(spacing: 0) {
+                // Top section with title and greeting
+                VStack(spacing: 8) {
+                    Text("Gymmando")
+                        .font(.system(size: 28, weight: .bold, design: .rounded))
+                        .foregroundColor(.white)
+                    
+                    if !userName.isEmpty {
+                        Text("Ready, \(userName)?")
+                            .font(.system(size: 16, weight: .medium))
+                            .foregroundColor(.gray)
                     } else {
-                        isConnecting = true
-                        await viewModel.connect()
-                        isConnecting = false
+                        Text("Ready?")
+                            .font(.system(size: 16, weight: .medium))
+                            .foregroundColor(.gray)
                     }
                 }
-            }) {
-                HStack {
-                    if isConnecting {
-                        ProgressView()
-                            .progressViewStyle(CircularProgressViewStyle(tint: .white))
+                .padding(.top, 60)
+                .padding(.bottom, 40)
+                
+                // Main content cards
+                VStack(spacing: 20) {
+                    // Start AI Session Card (Large)
+                    Button(action: {
+                        showAISession = true
+                    }) {
+                        VStack(spacing: 20) {
+                            // Mic icon and waveform
+                            ZStack {
+                                // Simple waveform bars (animated)
+                                WaveformBarsView()
+                                
+                                // Mic icon
+                                Image(systemName: "mic.fill")
+                                    .font(.system(size: 40))
+                                    .foregroundColor(.purple)
+                            }
+                            .frame(height: 60)
+                            
+                            // Button text
+                            Text("Start AI Session")
+                                .font(.system(size: 18, weight: .semibold))
+                                .foregroundColor(.white)
+                        }
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 200)
+                        .background(Color(white: 0.15))
+                        .cornerRadius(16)
                     }
-                    Text(isConnecting ? "Processing..." : (viewModel.liveKit.connected ? "Disconnect" : "Connect"))
+                    .padding(.horizontal, 20)
                 }
-                .font(.headline)
-                .foregroundColor(.white)
-                .frame(maxWidth: .infinity)
-                .padding()
-                .background(viewModel.liveKit.connected ? Color.red : Color.blue)
-                .cornerRadius(12)
+                
+                Spacer()
             }
-            .disabled(isConnecting)
-            .padding(.horizontal)
         }
-        .padding()
-        .onDisappear {
-            Task {
-                await viewModel.liveKit.disconnect()
+        .onAppear {
+            loadUserName()
+        }
+        .fullScreenCover(isPresented: $showAISession) {
+            AISessionView()
+        }
+    }
+    
+    private func loadUserName() {
+        if let user = Auth.auth().currentUser {
+            userName = user.displayName ?? user.email?.components(separatedBy: "@").first ?? ""
+        }
+    }
+}
+
+// Simple animated waveform bars
+struct WaveformBarsView: View {
+    @State private var heights: [CGFloat] = [20, 30, 25, 35, 28, 32, 24, 30]
+    
+    var body: some View {
+        HStack(spacing: 4) {
+            ForEach(0..<8, id: \.self) { index in
+                RoundedRectangle(cornerRadius: 2)
+                    .fill(Color.blue)
+                    .frame(width: 4, height: heights[index])
+                    .animation(
+                        .easeInOut(duration: 0.6)
+                        .repeatForever(autoreverses: true)
+                        .delay(Double(index) * 0.1),
+                        value: heights[index]
+                    )
+            }
+        }
+        .onAppear {
+            // Animate heights
+            Timer.scheduledTimer(withTimeInterval: 0.6, repeats: true) { _ in
+                withAnimation {
+                    for i in 0..<heights.count {
+                        heights[i] = CGFloat.random(in: 20...40)
+                    }
+                }
             }
         }
     }

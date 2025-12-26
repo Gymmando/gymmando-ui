@@ -23,6 +23,7 @@
 		B75DC2CB2ED5796E007035D6 /* LiveKit in Frameworks */ = {isa = PBXBuildFile; productRef = B75DC2CA2ED5796E007035D6 /* LiveKit */; };
 		B75DC2D42ED57ACF007035D6 /* LiveKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DC2D32ED57ACF007035D6 /* LiveKitService.swift */; };
 		B75DC2D62ED57B71007035D6 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DC2D52ED57B71007035D6 /* AppViewModel.swift */; };
+		B75DC2E82ED58A00007035D6 /* AISessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75DC2E72ED58A00007035D6 /* AISessionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		B75DC2B62ED574A3007035D6 /* Gymmando-UIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Gymmando-UIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B75DC2D32ED57ACF007035D6 /* LiveKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveKitService.swift; sourceTree = "<group>"; };
 		B75DC2D52ED57B71007035D6 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		B75DC2E72ED58A00007035D6 /* AISessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AISessionView.swift; sourceTree = "<group>"; };
 		B7D1F3B22EDE973C00794303 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,6 +149,7 @@
 			children = (
 				B75DC2A12ED574A1007035D6 /* ContentView.swift */,
 				B728F5B02EF50400008DA12D /* LoginView.swift */,
+				B75DC2E72ED58A00007035D6 /* AISessionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				B728F5B12EF50400008DA12D /* LoginView.swift in Sources */,
 				B728F5B32EF50400008DA12D /* BiometricAuth.swift in Sources */,
 				B728F5B52EF50400008DA12D /* AuthManager.swift in Sources */,
+				B75DC2E82ED58A00007035D6 /* AISessionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
