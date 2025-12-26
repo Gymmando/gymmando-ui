@@ -1,12 +1,16 @@
 import Foundation
 import LiveKit
 import AVFoundation
+import Combine
 
 @MainActor
 class LiveKitService: ObservableObject {
     
     @Published var connected = false
+    @Published var remoteAudioLevel: Float = 0 // Tracks AI's speaking volume
+    
     private var room: Room?
+    private var audioLevelTimer: Timer? // Timer for monitoring remote audio
     
     func connect(url: String, token: String) async {
         print("🔴 [LiveKit] STEP 1: Function entered")
@@ -41,6 +45,7 @@ class LiveKitService: ObservableObject {
             print("✅ [LiveKit] Microphone enabled")
             
             self.connected = true
+            self.startRemoteAudioMonitoring() // Start monitoring after connection
             print("✅ [LiveKit] Connection complete! connected = \(self.connected)")
             
         } catch {
@@ -68,6 +73,43 @@ class LiveKitService: ObservableObject {
         
         self.connected = false
         self.room = nil
+        self.stopRemoteAudioMonitoring() // Stop monitoring on disconnect
         print("✅ [LiveKit] Disconnected completely")
+    }
+    
+    private func startRemoteAudioMonitoring() {
+        audioLevelTimer = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true) { [weak self] _ in
+            Task { @MainActor in
+                self?.updateRemoteAudioLevel()
+            }
+        }
+    }
+    
+    private func stopRemoteAudioMonitoring() {
+        audioLevelTimer?.invalidate()
+        audioLevelTimer = nil
+        remoteAudioLevel = 0
+    }
+    
+    private func updateRemoteAudioLevel() {
+        guard let room = room else {
+            remoteAudioLevel = 0
+            return
+        }
+        
+        // Check if any remote participant is speaking
+        let isSpeaking = room.remoteParticipants.values.contains { $0.isSpeaking }
+        
+        if isSpeaking {
+            // Smoothly increase with slight variation for natural feel
+            let target: Float = 0.6 + Float.random(in: 0...0.3)
+            remoteAudioLevel = remoteAudioLevel * 0.7 + target * 0.3
+        } else {
+            // Smoothly decrease
+            remoteAudioLevel = remoteAudioLevel * 0.85
+            if remoteAudioLevel < 0.05 {
+                remoteAudioLevel = 0
+            }
+        }
     }
 }
