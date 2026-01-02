@@ -34,7 +34,9 @@ struct ContentView: View {
                 VStack(spacing: 20) {
                     // Start AI Session Card (Large)
                     Button(action: {
+                        print("📱 ContentView: Start AI Session button tapped")
                         showAISession = true
+                        print("📱 ContentView: showAISession set to true")
                     }) {
                         VStack(spacing: 20) {
                             // Mic icon and waveform
@@ -66,16 +68,24 @@ struct ContentView: View {
             }
         }
         .onAppear {
+            print("📱 ContentView: onAppear called")
             loadUserName()
         }
         .fullScreenCover(isPresented: $showAISession) {
             AISessionView()
+                .onAppear {
+                    print("📱 ContentView: AISessionView appeared (fullScreenCover)")
+                }
         }
     }
     
     private func loadUserName() {
+        print("📱 ContentView: loadUserName() called")
         if let user = Auth.auth().currentUser {
+            print("📱 ContentView: Found Firebase user: \(user.uid)")
             userName = user.displayName ?? user.email?.components(separatedBy: "@").first ?? ""
+        } else {
+            print("📱 ContentView: No Firebase user found")
         }
     }
 }

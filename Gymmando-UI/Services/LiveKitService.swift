@@ -26,10 +26,11 @@ class LiveKitService: ObservableObject {
             try session.setCategory(
                 .playAndRecord,
                 mode: .voiceChat,
-                options: [.defaultToSpeaker, .allowBluetoothA2DP]
+                options: [.defaultToSpeaker, .allowBluetoothA2DP, .allowBluetooth]
             )
-            try session.setActive(true)
-            print("✅ [LiveKit] Audio session active")
+            // Enable background audio
+            try session.setActive(true, options: [])
+            print("✅ [LiveKit] Audio session active with background support")
             
             print("🔴 [LiveKit] STEP 4: Creating room")
             let newRoom = Room()
@@ -112,4 +113,5 @@ class LiveKitService: ObservableObject {
             }
         }
     }
+    
 }
