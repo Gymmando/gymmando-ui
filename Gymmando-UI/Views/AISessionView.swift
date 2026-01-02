@@ -1,6 +1,7 @@
 import SwiftUI
 import AVFoundation
 import LiveKit
+import UIKit
 
 struct AISessionView: View {
     @StateObject private var viewModel = AppViewModel()
@@ -9,6 +10,10 @@ struct AISessionView: View {
     
     @State private var isConnecting = false
     @State private var pulseScale: CGFloat = 1.0
+    
+    init() {
+        print("🎬 AISessionView: init() called - view is being created")
+    }
     
     var body: some View {
         ZStack {
@@ -140,12 +145,20 @@ struct AISessionView: View {
             }
         }
         .onAppear {
+            print("👁️ AISessionView: onAppear triggered")
+            // Prevent phone from sleeping while AI session is active
+            UIApplication.shared.isIdleTimerDisabled = true
+            print("✅ Idle timer disabled - phone will not sleep")
             pulseScale = 1.8
             Task {
+                print("👁️ AISessionView: Task started, calling startSession()")
                 await startSession()
             }
         }
         .onDisappear {
+            // Re-enable idle timer when session ends
+            UIApplication.shared.isIdleTimerDisabled = false
+            print("✅ Idle timer re-enabled - phone can sleep normally")
             Task {
                 await endSession()
             }
@@ -153,12 +166,16 @@ struct AISessionView: View {
     }
     
     private func startSession() async {
+        print("🚀 AISessionView: startSession() called")
         isConnecting = true
+        print("🚀 AISessionView: About to call viewModel.connect()")
         await viewModel.connect()
+        print("🚀 AISessionView: viewModel.connect() completed")
         if viewModel.liveKit.connected {
             audioMonitor.start()
         }
         isConnecting = false
+        print("🚀 AISessionView: startSession() finished")
     }
     
     private func endSession() async {
